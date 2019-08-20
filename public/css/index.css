@@ -1,0 +1,191 @@
+body{
+   background-color: #daebf2;
+   color:#2e2e2d;
+   font-family: 'Lexend Mega', sans-serif;
+} 
+#cover{
+    width: 80%;
+    height: 80%;
+}
+#location_input{
+    margin-left: 29%;
+    margin-top: 4%;
+    width:40%;
+    height: 35px;
+    border-radius: 10em;
+    border: none;
+    outline:none;
+    font-size: 18px;
+    padding-left: 15px;
+    
+}
+#weather_check{
+    height: 40px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+#button_img{
+    width: 3%;
+    height: 25px;
+    position: absolute;
+}
+#message-1{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#message-2{
+   font-size: 20px;
+   text-align: center;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+#message-3{
+ 
+    font-size: 50px;
+    text-align: center;
+    
+}
+h1{
+    margin-top: 2%;
+    text-align: center
+}
+#button{
+    width: 50px;
+    height: 35px;
+}
+#weather_load_content{
+    margin: auto;
+    width: 55%;
+    height: 305px;
+    
+}
+.weather-box{
+    border-color: #0098d4;
+    border-style: solid;
+    width: 12%;
+    display: inline-block;
+    margin:1%;
+    border-radius: 1em;
+}
+.weather-box:hover{
+    background-color: #0098d4;
+}
+.city-name{
+   text-align: center;
+   margin-top:25px;
+   font-size: 30px;
+}
+#weather-example{
+    text-align: center;
+    margin-top:2%;
+}
+#weather-example-left{
+    text-align: center;
+    margin-top:-42%;
+    margin-left: 6.5%;
+}
+.weather-box-left{
+    border-color: #0098d4;
+    border-style: solid;
+    width: 12%;
+    margin:1%;
+    border-radius: 1em;
+}
+.weather-box-left:hover{
+    background-color: #0098d4;
+}
+#weather-example-right{
+    text-align: center;
+    margin-left: 80%;
+    margin-top: -41.2%;
+    
+}
+.weather-box-right{
+    border-color: #0098d4;
+    border-style: solid;
+    width:55%;
+    margin:5%;
+    border-radius: 1em;
+}
+.weather-box-right:hover{
+    background-color: #0098d4;
+}
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #0098d4;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+#redmond{
+    text-align: center;
+    font-size: 30px;
+}
+#kirkland{
+    text-align: center;
+    font-size: 30px;
+}
+#bellevue{
+    text-align: center;
+    font-size: 30px;
+}
+#bothell{
+    text-align: center;
+    font-size: 30px;
+}
+#burien{
+    text-align: center;
+    font-size: 30px;
+}
+#seatac{
+    text-align: center;
+    font-size: 30px;
+}
+#kenmore{
+    text-align: center;
+    font-size: 30px;
+}
+#kent{
+    text-align: center;
+    font-size: 30px;
+}
+#renton{
+    text-align: center;
+    font-size: 30px;
+}
+#tukwila{
+    text-align: center;
+    font-size: 30px;
+}
+
+#footer_p{
+    border-top: 2px solid #0098d4;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+}

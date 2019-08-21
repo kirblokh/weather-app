@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
-    <link rel='stylesheet' href="../css/index.css">
+    <link rel='stylesheet' href="css/index.css">
 </head>
 
 <body onload="myFunction()">
@@ -16,77 +15,30 @@
         <div id="weather_load_content">
             <form id="weather_form">
                 <input placeholder="Location" id="location_input" autocomplete="off" spellcheck="false">
-                <button id="weather_check"><img id="button_img" src="img/glass.png" alt="glass"></button>
+                <button id="weather_button">Search</button>
             </form>
-            <p id="message-1"></p>
-            <p id="message-2">Type in the location to get the forecast</p>
-            <p id="message-3"> </p>
+
+            <div class="location">
+                <p id="location_output"></p>
+            </div>
+
+            <div class="temperature">
+                <h2 id="degree"></h2>
+            </div>
+
+            <div class="temperature_description">
+                <p id="overview"></p>
+            </div>
+            
         </div>
-        <div id="weather-example">
-            <div class="weather-box">
-                <p class="city-name">Redmond</p>
-                <p id="redmond">20</p>
-            </div>
-            <div class="weather-box">
-                <p class="city-name">Bellevue</p>
-                <p id="bellevue">20</p>
-
-            </div>
-            <div class="weather-box">
-                <p class="city-name">Kirkland</p>
-                <p id="kirkland">20</p>
-            </div>
-            <div class="weather-box">
-                <p class="city-name">Bothell</p>
-                <p id="bothell">20</p>
-            </div>
-        </div>
-        <div id="weather-example-left">
-            <div class="weather-box-left">
-                <p class="city-name">Kenmore</p>
-                <p id="kenmore">20</p>
-            </div>
-            <div class="weather-box-left">
-                <p class="city-name">Burien</p>
-                <p id="burien">20</p>
-
-            </div>
-            <div class="weather-box-left">
-                <p class="city-name">SeaTac</p>
-                <p id="seatac">20</p>
-            </div>
-        </div>
-        <div id="weather-example-right">
-            <div class="weather-box-right">
-                <p class="city-name">Kent</p>
-                <p id="kent">20</p>
-            </div>
-            <div class="weather-box-right">
-                <p class="city-name">Renton</p>
-                <p id="renton">20</p>
-
-            </div>
-            <div class="weather-box-right">
-                <p class="city-name">Tukwila</p>
-                <p id="tukwila">20</p>
-            </div>
-        </div>
-
-
-
-        <p id="footer_p">Created by Kirill Blokhin</p>
     </div>
-
-
-
-
     <script src='js/app.js'></script>
 
     <script>
         var myVar;
 
         function myFunction() {
-            myVar = setTimeout(showPage, 2500);
+            myVar = setTimeout(showPage, 300);
         }
 
         function showPage() {

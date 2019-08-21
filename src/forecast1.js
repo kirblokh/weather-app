@@ -10,7 +10,7 @@ const forecast1 = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback("Unable to find the location!", undefined)
         } else {
-            callback(undefined, Math.trunc(body.currently.temperature)+'℉')
+            callback(undefined, Math.trunc(body.currently.temperature))
         }
     })
 }

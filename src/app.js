@@ -4,16 +4,7 @@ const path = require('path')
 const geocode = require('./geocode')
 const forecast = require('./forecast')
 const forecast1 = require('./forecast1')
-const redmond = require('./redmond')
-const kirkland = require('./kirkland')
 const bellevue = require('./bellevue')
-const bothell = require('./bothell')
-const kent = require('./kent')
-const renton = require('./renton')
-const tukwila = require('./tukwila')
-const seatac = require('./seatac')
-const burien = require('./burien')
-const kenmore = require('./kenmore')
 
 
 const app = express()
@@ -65,20 +56,7 @@ app.get('/weather1', (req, res) => {
         })
     })
 })
-app.get('/Redmond', (req, res) => {
-    redmond((forecastData) => {
-        res.send({
-            redmond: forecastData
-        })
-    })
-})
-app.get('/Kirkland', (req, res) => {
-    kirkland((forecastData) => {
-        res.send({
-            kirkland: forecastData
-        })
-    })
-})
+
 app.get('/Bellevue', (req, res) => {
     bellevue((forecastData) => {
         res.send({
@@ -86,57 +64,6 @@ app.get('/Bellevue', (req, res) => {
         })
     })
 })
-app.get('/Bothell', (req, res) => {
-    bothell((forecastData) => {
-        res.send({
-            bothell: forecastData
-        })
-    })
-})
-app.get('/Kent', (req, res) => {
-    kent((forecastData) => {
-        res.send({
-            kent: forecastData
-        })
-    })
-})
-app.get('/Renton', (req, res) => {
-    renton((forecastData) => {
-        res.send({
-            renton: forecastData
-        })
-    })
-})
-app.get('/Tukwila', (req, res) => {
-    tukwila((forecastData) => {
-        res.send({
-            tukwila: forecastData
-        })
-    })
-})
-app.get('/SeaTac', (req, res) => {
-    seatac((forecastData) => {
-        res.send({
-            seatac: forecastData
-        })
-    })
-})
-app.get('/Kenmore', (req, res) => {
-    kenmore((forecastData) => {
-        res.send({
-            kenmore: forecastData
-        })
-    })
-})
-app.get('/Burien', (req, res) => {
-    burien((forecastData) => {
-        res.send({
-            burien: forecastData
-        })
-    })
-})
-
-
 
 app.listen(port, () => {
 

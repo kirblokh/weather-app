@@ -17,35 +17,42 @@
                 <input placeholder="Location" id="location_input" autocomplete="off" spellcheck="false">
                 <button id="weather_button">Search</button>
             </form>
-
             <div class="location">
-                <p id="location_output"></p>
+                <h2 id="location_output">Enter the location</h2>
             </div>
-
-            <div class="temperature">
-                <h2 id="degree"></h2>
+            <div class="description">
+                <p id="overview">To find the weather</p>
             </div>
-
-            <div class="temperature_description">
-                <p id="overview"></p>
+            <div id="output_container">
+                <div class="weather" id="wind">
+                    Wind Speed
+                    <p id="windspeed">TBD</p>
+                </div>
+                <div class="weather" id="temperature">
+                    Temperature
+                    <p id="degree">TBD</p>
+                </div>
+                <div class="weather">
+                    Rain chance
+                    <p id="percip">TBD</p>
+                </div>
             </div>
-            
         </div>
-    </div>
-    <script src='js/app.js'></script>
+        
+            <script src='js/app.js'></script>
+        <script>
+            var myVar;
 
-    <script>
-        var myVar;
+            function myFunction() {
+                myVar = setTimeout(showPage, 300);
+            }
 
-        function myFunction() {
-            myVar = setTimeout(showPage, 300);
-        }
-
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("cover").style.display = "initial";
-        }
-    </script>
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("cover").style.display = "initial";
+            }
+        </script>
+        
 </body>
 
 

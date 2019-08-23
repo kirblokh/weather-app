@@ -1,34 +1,53 @@
 
 const weatherForm = document.querySelector('#weather_form')
 const search = document.querySelector('#location_input')
-const messageOne = document.querySelector('#location_output')
-const messageTwo = document.querySelector('#overview')
-const messageThree = document.querySelector('#degree')
+const location_output = document.querySelector('#location_output')
+const overview = document.querySelector('#overview')
+const degree = document.querySelector('#degree')
+const windspeed = document.querySelector('#windspeed')
+const percip = document.querySelector('#percip')
 const bellevue = document.querySelector('#bellevue')
+
 
 
 
 weatherForm.addEventListener('submit', (event) => {
     event.preventDefault()
 
-    messageOne.textContent = ''
-    messageTwo.textContent=''
-    messageThree.textContent='Loading...'
+    overview.textContent=''
+    degree.textContent=''
+    percip.textContent=''
+    windspeed.textContent=''
+    location_output.textContent = 'Loading...'
 
     fetch('/weather?address=' + search.value).then((response) => {
         response.json().then((data) => {
             if (data.error) {
-                messageOne.textContent=data.error
+                location_output.textContent=data.error
             } else {
-                messageOne.textContent = data.location
-                messageTwo.textContent = data.forecast
+                location_output.textContent = data.location
+                overview.textContent = data.forecast
             }
         })
     })
-    fetch('/weather1?address=' + search.value).then((response) => {
+    fetch('/windspeed?address=' + search.value).then((response) => {
         response.json().then((data) => {
 
-                messageThree.textContent = data.forecast1
+                windspeed.textContent = data.windspeed
+            
+        })
+    })
+    fetch('/degree?address=' + search.value).then((response) => {
+        response.json().then((data) => {
+
+                degree.textContent = data.degree
+            
+        })
+    })
+    fetch('/percip?address=' + search.value).then((response) => {
+        response.json().then((data) => {
+
+                percip.textContent = data.percip
             
         })
     })

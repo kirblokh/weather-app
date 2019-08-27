@@ -3,9 +3,12 @@ const path = require('path')
 const geocode = require('./geocode')
 const forecast = require('./forecast')
 const degree = require('./degree')
-const bellevue = require('./bellevue')
 const windspeed = require('./windspeed')
-const percip=require('./percip')
+const percip = require('./percip')
+const newyork = require('./newyork')
+const london = require('./london')
+const tokyo = require('./tokyo')
+const singapore = require('./singapore')
 
 
 
@@ -98,13 +101,34 @@ app.get('/percip', (req, res) => {
           })
       })
   })
-// app.get('/bellevue', (req, res) => {
-//     icon((forecastData) => {
-//         res.send({
-//             bellevue: forecastData
-//         })
-//     })
-// })
+app.get('/newyork', (req, res) => {
+    newyork((forecastData) => {
+        res.send({
+            newyork: forecastData
+        })
+    })
+})
+app.get('/london', (req, res) => {
+    london((forecastData) => {
+        res.send({
+            london: forecastData
+        })
+    })
+})
+app.get('/tokyo', (req, res) => {
+    tokyo((forecastData) => {
+        res.send({
+            tokyo: forecastData
+        })
+    })
+})
+app.get('/singapore', (req, res) => {
+    singapore((forecastData) => {
+        res.send({
+            singapore: forecastData
+        })
+    })
+})
 
 app.listen(port, () => {
 

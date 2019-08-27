@@ -77,6 +77,46 @@ h1{
     font-size: 20px;
     text-align: center;
 }
+#cities1{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#newyork{
+    border: 1px solid white;
+    text-align: center;
+    width:40%;
+    margin:1%;
+    font-size: 20px;
+}
+#london{
+    border: 1px solid white;
+    text-align: center;
+    width:40%;
+    margin:1%;
+    font-size: 20px;
+}
+#cities2{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#tokyo{
+    border: 1px solid white;
+    text-align: center;
+    width:40%;
+    margin:1%;
+    font-size: 20px;
+}
+#singapore{
+    border: 1px solid white;
+    text-align: center;
+    width:40%;
+    margin:1%;
+    font-size: 20px;
+}
 #loader {
     position: absolute;
     left: 50%;
@@ -87,7 +127,7 @@ h1{
     margin: -75px 0 0 -75px;
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #0098d4;
+    border-top: 16px solid rgb(87, 153, 247);
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
@@ -108,3 +148,47 @@ h1{
     text-align: center;
     font-size: 30px;
 }
+@media screen and (width: 320px) {
+    #cities2{
+        margin-top: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #cities1{
+        margin-top: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #newyork{
+        border: 1px solid white;
+        text-align: center;
+        width:40%;
+        margin:0.5%;
+        font-size: 18px;
+    }
+    #london{
+        border: 1px solid white;
+        text-align: center;
+        width:40%;
+        margin:0.5%;
+        font-size: 18px;
+    }
+    #tokyo{
+        border: 1px solid white;
+        text-align: center;
+        width:40%;
+        margin:0.5%;
+        font-size:18px;
+    }
+    #singapore{
+        border: 1px solid white;
+        text-align: center;
+        width:40%;
+        margin:0.5%;
+        font-size: 18px;
+    }
+    
+    
+    }

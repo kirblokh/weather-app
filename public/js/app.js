@@ -7,7 +7,10 @@ const degree = document.querySelector('#degree')
 const windspeed = document.querySelector('#windspeed')
 const percip = document.querySelector('#percip')
 const bellevue = document.querySelector('#bellevue')
-
+const nydegree = document.querySelector('#nydegree')
+const lddegree = document.querySelector('#lddegree')
+const todegree = document.querySelector('#todegree')
+const spdegree = document.querySelector('#spdegree')
 
 
 
@@ -53,11 +56,26 @@ weatherForm.addEventListener('submit', (event) => {
     })
 })
 
-// fetch('/Bellevue').then((response)=>{
-//     response.json().then((data)=>{
-//         bellevue.textContent=data.bellevue
-//     })
-// })
+fetch('/newyork').then((response)=>{
+    response.json().then((data)=>{
+        nydegree.textContent=data.newyork
+    })
+})
+fetch('/london').then((response)=>{
+    response.json().then((data)=>{
+        lddegree.textContent=data.london
+    })
+})
+fetch('/tokyo').then((response)=>{
+    response.json().then((data)=>{
+        todegree.textContent=data.tokyo
+    })
+})
+fetch('/singapore').then((response)=>{
+    response.json().then((data)=>{
+        spdegree.textContent=data.singapore
+    })
+})
 
 
 

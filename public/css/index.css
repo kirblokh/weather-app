@@ -1,8 +1,8 @@
 body{
    color:#1f1d1d;
    font-family: 'Lexend Mega', sans-serif;
-   background: linear-gradient(rgb(188, 213, 247),rgb(87, 153, 247));
-   height: 100vh;
+   background: linear-gradient(rgb(188, 213, 247),rgb(87, 153, 247) );
+   height: 105vh;
    display: flex;
    justify-content: center;
    align-items: center;

@@ -11,7 +11,7 @@
 <body onload="myFunction()">
     <div id="loader"></div>
     <div style="display:none;" id="cover">
-        <h1>What is the weather?</h1>
+        <!-- <h1>What is the weather?</h1> -->
         <div id="weather_load_content">
             <form id="weather_form">
                 <input placeholder="Location" id="location_input" autocomplete="off" spellcheck="false">
@@ -39,7 +39,7 @@
             </div>
             <div id="cities1">
                 <div id="newyork">
-                    <p>New-York</p>
+                    <p>New York</p>
                     <p id="nydegree"></p>
                 </div>
                 <div id="london">
@@ -64,7 +64,7 @@
             var myVar;
 
             function myFunction() {
-                myVar = setTimeout(showPage, 2500);
+                myVar = setTimeout(showPage, 300);
             }
 
             function showPage() {
